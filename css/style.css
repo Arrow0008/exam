@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:300,400&display=swap');
+
+@font-face {
+	font-family: 'Big John';
+	src: 	url('../fonts/Big-John.otf') format('otf'),
+	url('../fonts/Big-John') format('ttf'),
+	url('../fonts/Big-John.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-size: 16px;
+	color: #81868e;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.6;
+	/*background-color: red;*/
+}
+a {
+	text-decoration: none;
+}
+/*Global properties*/
+.color-white {
+	color: #fff !important;
+}
+.title {
+	text-transform: uppercase;
+	font-size: 35px;
+	letter-spacing: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.inputForm{
+	width: 100%;
+	border: 1px solid #a9a9a9;
+	color: #a9a9a9;
+	padding: 10px 30px;
+	font-size: 14px;
+	margin: 10px;
+
+}
+
+/*Bootstrap kill*/
+.nav-link {
+	color: #fff !important;
+	margin: 0 5px;
+	padding: 10px 20px !important;
+	border: 1px solid transparent;
+	border-radius: 25px; 
+
+}
+.nav-link:hover {
+	border: 1px solid #fff;
+}
+.navbar-light .navbar-brand {
+	color: #fff;
+}
+
+
+/*Section header*/
+.header {
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.header nav a.navbar-brand {
+	font-family: 'Big John', 'Open Sans', sans-serif;
+}
+.header-arrow {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translate(-50%);
+	width: 40px;
+	height: 40px;
+	background-color: #19bd9a;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+}
+.header-arrow a {
+	color: #fff;
+	font-size: 18px;
+
+}
+.header-arrow a i {
+	transform: scale(1);
+	transition: 0.2s all linear;
+}
+.header-arrow a i:hover {
+	transform: scale(1.4);
+}
+.btn{
+	color: #fff;
+	border: 1px solid #81868e;
+}
+.btn-black{
+	color: #81868e !important;
+	margin: 0 5px;
+	padding: 10px 20px !important;
+	border-radius: 25px; 
+}
+.btns-green {
+	background-color: #19bd9a;
+	border-color: #a9a9a9;
+	margin: 0 10px;
+	border-radius: 0px;
+	text-transform: uppercase;
+	width: 100%;
+	color: #fff;
+	padding: 10px 20px !important;
+}
+
+
+/*MEDIA SCREEN FOR MOBILE*/
+
+@media screen and (max-width: 576px) {
+	.section{
+		
+	}
+	.navbar {
+		background-color: rgba(0,0,0,0.5);
+		text-align: center;
+	}
+	.nav-info{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.bouncy{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: 'Open Sans Pro',sans-serif;
+}
+.textarea{
+	width: 100%;
+	margin: 30px 10px;
+}
